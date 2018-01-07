@@ -1,0 +1,363 @@
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    outline: 0;
+	    font-weight: inherit;
+	    font-style: inherit;
+	    font-size: 100%;
+	    font-family: inherit;
+	    vertical-align: baseline;
+	}
+
+	article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;}
+
+	.clearfix:before,
+		.clearfix:after {
+					    content: "";
+					    display: block;
+					    clear: both;
+					    visibility: hidden;
+					    line-height: 0;
+					    height: 0;
+					    font-size:0;
+}
+
+		.clearfix { *zoom:1;}
+
+		
+		@font-face{
+			font-family: myfirstfonts;
+			src:url('../fonts/BebasNeue-webfont.eot'),
+				url('../fonts/BebasNeue-webfont.ttf'),
+				url('../fonts/BebasNeue-webfont.moff'),
+				url('../fonts/BebasNeue-webfont.svg');
+			}
+		@font-face{
+			font-family: one;
+			src:url('../fonts/ColabThi-webfont.eot'),
+				url('../fonts/ColabThi-webfont.ttf'),
+				url('../fonts/ColabThi-webfont.moff'),
+				url('../fonts/ColabThi-webfont.svg');
+		}
+
+		@keyframes warning{
+			0%{text-shadow: 0px 0px 0px red;}
+			20%{text-shadow: 0px 0px 5px red;}
+			40%{text-shadow: 0px 0px 5px blue;}
+			60%{text-shadow: 0px 0px 10px blue;}
+			80%{text-shadow: 0px 0px 8px blue;}
+			100%{text-shadow: 0px 0px 0px blue;}
+		}
+
+		@-webkit-keyframes warning{
+			0%{text-shadow: 0px 0px 0px red;}
+			20%{text-shadow: 0px 0px 5px red;}
+			40%{text-shadow: 0px 0px 5px blue;}
+			60%{text-shadow: 0px 0px 10px blue;}
+			80%{text-shadow: 0px 0px 8px blue;}
+			100%{text-shadow: 0px 0px 0px blue;}
+		}
+
+		@-o-keyframes warning{
+			0%{text-shadow: 0px 0px 0px red;}
+			20%{text-shadow: 0px 0px 5px red;}
+			40%{text-shadow: 0px 0px 5px blue;}
+			60%{text-shadow: 0px 0px 10px blue;}
+			80%{text-shadow: 0px 0px 8px blue;}
+			100%{text-shadow: 0px 0px 0px blue;}
+		}
+
+		@-moz-keyframes warning{
+			0%{text-shadow: 0px 0px 0px red;}
+			20%{text-shadow: 0px 0px 5px red;}
+			40%{text-shadow: 0px 0px 5px blue;}
+			60%{text-shadow: 0px 0px 10px blue;}
+			80%{text-shadow: 0px 0px 8px blue;}
+			100%{text-shadow: 0px 0px 0px blue;}
+		}
+
+		@keyframes round{
+			0%{transform: rotate(20deg);}
+			100%{transform: rotate(-20deg);}
+		}
+
+		@keyframes found{
+			0%{transform: rotate(-20deg);}
+			100%{transform: rotate(20deg);}
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		li{
+			list-style: none;
+		}
+
+		.wrap{
+			width: 100%;
+			max-width: 1360px;
+			margin:0 auto;
+		}
+
+		header{
+			width: 94%;/*940/1000*/
+			margin:0 auto;
+			background-image: url('../images/atwi_mockup_02.png');
+			background-repeat:repeat-x;
+			padding-top: 41px;/*41/1000*/
+		}
+
+		header>a{
+			font-family: myfirstfonts;
+			font-size: 3em;/*48/16*/
+			color: #0d0c0c;
+		
+			line-height: 2.25em;/*108/48*/
+			text-shadow: 1px 2px #dfdada;
+		}
+
+		header a span{
+			color: #dfdada;
+		}
+
+		header nav{
+			width: 100%;/*940/940*/
+			margin-left: 1.063%;/*-10/940*/
+			margin-bottom: 2.4468%;/*23/940*/
+			height: 42px;
+			background: linear-gradient(#fff,#e4e4e4);
+			display: table;
+		}
+
+		header nav ul{
+			display: table-row;
+		}
+
+		select{
+			display: none;
+		}
+
+		header nav ul li{
+			display: table-cell;
+			text-align: center;
+		}
+
+		/*header nav li:nth-child(odd) a{
+			color: #fe0208;
+		}*/
+
+		header nav li a{
+			font-family: myfirstfonts;
+			color: #0d0c0c;
+			font-size: 1.875em;/*30/16*/
+					
+		}
+
+		header nav li a:hover{
+			animation: warning 2s infinite linear;
+			-webkit-animation: warning 2s infinite linear;
+			-o-animation: warning 2s infinite linear;
+			-moz-animation: warning 2s infinite linear;
+		}
+
+		header nav li:first-child{
+			text-align: left;
+		}
+
+		header nav li:last-child{
+			text-align: right;
+		}
+
+		section{
+			width: 94%;/*940/1000*/
+			border-top: 4px double #d6d5d5;
+			border-bottom: 4px double #d6d5d5;
+			margin:0 auto;
+			padding:2% 0 1.5% 0;/*20/1000 15/1000*/
+		}
+
+		aside{
+			width: 23%;/*220/940*/
+			background: linear-gradient(#fff,#e3e3e3,#fff);
+			float: left;
+			margin-left: 1.06%;/*-10/940*/
+			padding: 1.06% 0px 3.72% 1.06%;/*10/940 35/940 10/940*/
+			box-shadow: 2px 5px 8px #474747;
+		}
+
+		aside a{
+			display: block;
+			transition: box-shadow 0.5s 0s;
+		}
+
+		aside a:hover{
+			box-shadow: 0 4px 4px #646464;
+		}
+
+		aside h2{
+			font-family: myfirstfonts;
+			font-size: 1.875em;/*30/16*/
+			color: #060606;
+			margin-top: 14.54%;/*32/220*/
+		}
+
+
+		aside>div>div{
+			width: 46%;/*102/220*/
+			float: left;
+			
+		}
+
+		aside>div>div img{
+			width: 97%;/*99/102*/
+			display: block;
+			margin-top: 23.52%;/*24/102*/
+			animation: round 0.5s alternate linear 6;
+		}
+
+		aside>div>div .on{
+			animation: found 0.5s alternate linear 6;
+		}
+
+		aside>div>div a{
+			border:1px solid #646464;
+			background: linear-gradient(#ddd,#a19e9e);
+			border-radius: 12px;
+			font-size: 0.875em;/*14/16*/
+			color: #5c5959;
+			text-align: center;
+			margin-top: 12.74%;/*13/102*/
+		}
+
+		aside>div>div:last-child{
+			float: right;
+			margin-right: 4.54%;/*10/220*/
+		}
+
+		article{
+			width: 74.468%;/*700/940*/
+			float: right;
+			
+		}
+
+		article img{
+			float: left;
+			
+			margin: 0.714% 4.285% 0 6.57%;/*5/700 30/700 46/700*/
+		}
+
+		article h1{
+			font-family: myfirstfonts;
+			color: #0d0c0c;
+			font-size: 6.375em;/*102/16*/
+			margin-top: 4.2857%;/*30/700*/
+		}
+
+		article>span{
+			font-family: one;
+			font-size: 2.25em;/*36/16*/
+			color: #757474;
+			font-weight: bold;
+		}
+
+		article a{
+			padding: 4.285% 4.285%;/*30/700*/
+			color: #fff;
+			font-size: 2.25em;/*36/16*/
+			font-family: myfirstfonts;
+			background: linear-gradient(#f15c60,#ae191d);
+			border-radius: 6px;
+			float: left;
+			
+    		text-align: center;
+    		transition:color 2s linear;
+    		box-shadow: 2px 2px 8px #8f8f8f;
+		}
+
+		article a span{
+    		
+    		transition:color 2s linear 1s;
+		}
+
+		article a:hover{
+			color: black;
+		}
+
+		article a:hover span{
+			color: black;
+		}
+
+		article a span{
+			color: #fff;
+			margin-left: 25px;
+		}
+
+
+		article p{
+			font-size: 1.875em;/*30/16*/
+			color: #757474;
+			margin-top: 3.14%;/*22/700*/
+			margin-bottom: 5%;/*35/700*/
+			font-family: one;
+		}
+
+		footer{
+			width:94%;/*940/1000*/
+			margin:0 auto;
+			background-image: url('../images/atwi_mockup_07.png');
+			background-repeat: repeat-x;
+			background-position:bottom left;
+			padding-bottom: 4.1%;/*41/1000*/
+		}
+
+		footer p{
+			font-family: myfirstfonts; 
+			text-align: center;
+			color: #757474;
+			font-size: 18px;/*18/16*/
+			margin-top: 3.19%;/*30/940*/
+			margin-bottom: 4.04%;/*38/940*/
+		}
+
+		@media screen and (min-width: 968px) and (max-width: 1200px){
+			body{background-color: blue;}
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 968px){
+			body{background-color:red;}
+		}
+		
+		@media screen and (max-width:768px){
+			aside,article{
+				float: none;
+				width: 100%;
+
+			}
+
+			 
+
+			header nav{
+				background: none;
+			}
+			header nav ul{
+				display: none;
+				
+			}
+			select{
+				display: block;
+			}
+		}
+
+
+
+
+
